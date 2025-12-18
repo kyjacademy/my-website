@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>페이머스(FAMOUS) - 독보적 브랜딩 전략</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Noto+Serif+KR:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'royal-black': '#0a0a0a',
+                        'charcoal': '#1a1a1a',
+                        'imprint-red': '#D32F2F',
+                        'off-white': '#F9FAFB',
+                        'paper': '#f0f0f0'
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans KR"', 'sans-serif'],
+                        serif: ['"Noto Serif KR"', 'serif'],
+                    },
+                    boxShadow: {
+                        'glow': '0 0 20px rgba(211, 47, 47, 0.5)',
+                        'card': '0 10px 30px rgba(0, 0, 0, 0.08)',
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                        'pulse-slow': 'pulse 3s infinite',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .text-gradient {
+            background: linear-gradient(to right, #fff, #aaa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .text-gradient-red {
+            background: linear-gradient(to right, #D32F2F, #FF5252);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .highlight-marker {
+            background: linear-gradient(120deg, rgba(211, 47, 47, 0.2) 0%, rgba(211, 47, 47, 0.2) 100%);
+            background-repeat: no-repeat;
+            background-size: 100% 40%;
+            background-position: 0 90%;
+        }
+        /* Custom List Bullet */
+        .check-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .check-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #D32F2F;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-royal-black antialiased overflow-x-hidden selection:bg-imprint-red selection:text-white">
+
+    <!-- Sticky Header & Urgency Bar -->
+    <div class="fixed top-0 w-full z-50">
+
+        <nav class="bg-royal-black/90 backdrop-blur-md border-b border-white/10 py-4">
+            <div class="container mx-auto px-6 flex justify-between items-center">
+                <div class="text-white font-black text-xl tracking-tighter">FAMOUS</div>
+                <button onclick="document.getElementById('final-cta').scrollIntoView()" class="bg-white text-black px-6 py-2 text-sm font-bold rounded-full hover:bg-gray-200 transition-colors">
+                    페이머스 수강 신청
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Section 1: Hero -->
+    <section class="relative h-screen flex items-center justify-center bg-royal-black text-white pt-10 overflow-hidden">
+        <!-- Abstract Background Elements -->
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
+        <div class="absolute w-96 h-96 bg-imprint-red rounded-full blur-[120px] opacity-20 -top-20 -left-20 animate-pulse-slow"></div>
+        <div class="absolute w-80 h-80 bg-blue-900 rounded-full blur-[100px] opacity-10 bottom-0 right-0"></div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center">
+            <div class="inline-block border border-imprint-red text-imprint-red px-4 py-1 rounded-full mb-6 text-sm font-bold tracking-widest animate-fade-in-up" style="animation-delay: 0.1s;">
+                FAMOUS : BRANDING CLASS
+            </div>
+            
+            <p class="text-imprint-red font-bold tracking-[0.3em] mb-6 animate-fade-in-up" style="animation-delay: 0.1s;">BRANDING MASTER CLASS</p>
+            
+            <h1 class="text-5xl md:text-4xl lg:text-8xl font-black text-white leading-[1.1] mb-8 animate-fade-in-up tracking-tight" style="animation-delay: 0.2s;">
+                시장을 독식하는
+                <span class="text-gradient-red">독보적 브랜딩</span> 전략
+            </h1>
+            <h1 class="text-5xl md:text-8xl lg:text-8xl font-black text-white leading-[1.1] mb-8 animate-fade-in-up tracking-tight" style="animation-delay: 0.2s;">
+                페이머스 10기
+            </h1>
+            
+            <div class="w-20 h-1 bg-white/20 mx-auto my-10"></div>
+
+            <div class="space-y-4 text-gray-300 text-lg md:text-2xl font-light mb-12 animate-fade-in-up" style="animation-delay: 0.4s;">
+                <p>베스트 5 경쟁 탈피 <span class="text-imprint-red mx-2">→</span> <strong class="text-white">유일무이, 대체불가 포지션 선점</strong></p>
+                <p>복잡한 이론 <span class="text-imprint-red mx-2">→</span> <strong class="text-white">즉시 쓸 실전 전략</strong></p>
+                <p class="text-sm md:text-base text-gray-500 mt-4">매주 업데이트되는 살아있는 강의 | 3,671명 검증 완료</p>
+            </div>
+
+            <button onclick="document.getElementById('final-cta').scrollIntoView()" class="animate-fade-in-up group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-imprint-red font-pj rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 shadow-glow hover:scale-105" style="animation-delay: 0.6s;">
+                페이머스 10기 수강하기
+                <div class="absolute -inset-3 rounded-xl bg-imprint-red opacity-20 group-hover:opacity-40 blur-lg transition-opacity duration-200"></div>
+            </button>
+        </div>
+    </section>
+
+    <!-- Section 2: Pain Point (Problem Recognition) -->
+    <section class="py-24 bg-off-white text-royal-black">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-20 scroll-reveal">
+                <span class="text-imprint-red font-bold tracking-widest uppercase mb-2 block">Pain Point</span>
+                <h2 class="text-4xl md:text-6xl font-black leading-tight">
+                    당신은 지금<br>
+                    <span class="highlight-marker">'카테고리'</span>로 불리고 있습니다
+                </h2>
+            </div>
+
+            <!-- Problem 1 & 2 Grid -->
+            <div class="grid md:grid-cols-2 gap-12 mb-20">
+                <div class="bg-white p-10 rounded-3xl shadow-card scroll-reveal">
+                    <h3 class="text-2xl font-bold mb-6 border-l-4 border-imprint-red pl-4">문제 1. 이름이 아니라 카테고리로 불린다</h3>
+                    <div class="space-y-4 text-gray-600 mb-8">
+                        <div class="bg-gray-100 p-4 rounded-lg rounded-tl-none">"저번에 간 그 <strong class="text-black">한식집</strong>"</div>
+                        <div class="bg-gray-100 p-4 rounded-lg rounded-tl-none">"역 앞 <strong class="text-black">카페</strong>"</div>
+                        <div class="bg-gray-100 p-4 rounded-lg rounded-tl-none">"동네 <strong class="text-black">네일샵</strong>"</div>
+                    </div>
+                    <p class="text-lg font-medium text-center">
+                        카테고리입니다. <span class="text-imprint-red font-bold">브랜드명이 아닙니다.</span><br>
+                        카테고리로 불리는 순간 비교 대상이 됩니다.
+                    </p>
+                </div>
+
+                <div class="bg-white p-10 rounded-3xl shadow-card scroll-reveal" style="transition-delay: 0.2s;">
+                    <h3 class="text-2xl font-bold mb-6 border-l-4 border-imprint-red pl-4">문제 2. 검색하면 5개 중 하나다</h3>
+                    <div class="border border-gray-300 rounded-lg p-6 mb-6">
+                        <div class="flex items-center border-b pb-2 mb-4">
+                            <i class="fas fa-search text-gray-400 mr-2"></i>
+                            <span class="text-gray-500">근처 맛집</span>
+                        </div>
+                        <ul class="space-y-3 text-gray-400 text-sm">
+                            <li>1. 당신 가게</li>
+                            <li>2. 경쟁 가게 A</li>
+                            <li>3. 경쟁 가게 B ...</li>
+                        </ul>
+                    </div>
+                    <div class="text-center">
+                        <p class="mb-2">리뷰 비교, 가격 비교, 거리 비교...</p>
+                        <p class="text-xl font-bold">결국 선택받지 못합니다.<br><span class="text-imprint-red">똑같은 카테고리니까요.</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Problem 3: Contrast -->
+            <div class="bg-royal-black text-white p-8 md:p-12 rounded-3xl shadow-2xl mb-20 scroll-reveal">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">문제 3. 맞습니다! 완전히 방향을 바꾸겠습니다.</h3>
+                    <p class="text-gray-400">카테고리를 대체하지 못했다면 브랜드가 아닙니다.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="text-center opacity-60">
+                        <h4 class="text-xl font-bold mb-4 border-b border-gray-600 pb-2">Category (실패)</h4>
+                        <div class="space-y-4 font-serif">
+                            <p>"치킨 먹을까?"</p>
+                            <p>"커피 마실까?"</p>
+                            <p>"버블티 먹을까?"</p>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="text-xl font-bold mb-4 border-b border-imprint-red pb-2 text-imprint-red">Brand (성공)</h4>
+                        <div class="space-y-4 font-bold text-lg">
+                            <p>"BBQ 시킬까?"</p>
+                            <p>"스타벅스 갈까?"</p>
+                            <p>"공차 갈까?"</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 text-center border-t border-gray-800 pt-8">
+                    <p class="text-xl md:text-2xl font-serif">
+                        "휴지 = 크리넥스", "택배 = 퀵서비스", "검색 = 구글"<br>
+                        <span class="text-imprint-red font-bold mt-4 block">고객 입에서 카테고리 대신 브랜드명이 나와야 합니다.</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Problem 4 -->
+            <div class="text-center max-w-2xl mx-auto scroll-reveal">
+                <h3 class="text-2xl font-bold mb-4">문제 4. 브랜드가 없으니 자산도 없다</h3>
+                <p class="text-gray-600 mb-6">10년 장사했습니다. 손에 남은 게 뭡니까? 낡은 주방 기구? 단골 몇 명?</p>
+                <div class="bg-white p-6 rounded-xl border border-gray-200 shadow-sm inline-block">
+                    <p class="font-bold text-lg mb-2">브랜드 자산은 없습니다.</p>
+                    <ul class="text-left text-sm text-gray-500 space-y-1">
+                        <li>❌ 2호점 못 냅니다. (시스템 부재)</li>
+                        <li>❌ 매각 못 합니다. (브랜드 가치 부재)</li>
+                        <li>❌ 대물림 못 합니다. (주인 = 가게)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 2.5: Case Study - 일반 vs 수밀 -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="text-center mb-16 scroll-reveal">
+                <span class="text-imprint-red font-bold tracking-widest uppercase mb-2 block">Real Case</span>
+                <h2 class="text-3xl md:text-5xl font-black">
+                    평범한 빵집 vs <span class="text-imprint-red">수밀 블랑제리</span>
+                </h2>
+                <p class="mt-4 text-gray-600">브랜딩 하나로 달라진 결과</p>
+            </div>
+    
+            <!-- 비교 이미지 (16:9) -->
+            <div class="grid grid-cols-2 gap-4 md:gap-8 mb-12 scroll-reveal">
+                <!-- 일반 빵집 -->
+                <div class="relative">
+                    <div class="aspect-video bg-gray-200 rounded-xl overflow-hidden">
+                        <img src="YOUR_IMAGE_NORMAL_BAKERY.jpg" alt="일반 빵집" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute top-3 left-3 md:top-4 md:left-4 bg-gray-800 text-white text-xs md:text-sm px-3 py-1 rounded-full font-bold">
+                        일반 빵집
+                    </div>
+                    <p class="mt-3 text-center text-gray-500 text-sm md:text-base">카테고리로 불림</p>
+                </div>
+    
+                <!-- 수밀 블랑제리 -->
+                <div class="relative">
+                    <div class="aspect-video bg-gray-200 rounded-xl overflow-hidden border-2 border-imprint-red">
+                        <img src="YOUR_IMAGE_SUMIL.jpg" alt="수밀 블랑제리" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute top-3 left-3 md:top-4 md:left-4 bg-imprint-red text-white text-xs md:text-sm px-3 py-1 rounded-full font-bold">
+                        수밀 블랑제리
+                    </div>
+                    <p class="mt-3 text-center text-imprint-red font-bold text-sm md:text-base">브랜드로 기억됨</p>
+                </div>
+            </div>
+    
+            <!-- 카톡 메시지 (9:16) -->
+            <div class="scroll-reveal" style="transition-delay:0.2s;">
+                <p class="text-center text-sm text-gray-500 mb-4 font-bold">실제 수강생 반응</p>
+                <div class="grid grid-cols-3 gap-3 md:gap-6 max-w-3xl mx-auto">
+                    <div class="aspect-[9/16] bg-gray-100 rounded-xl overflow-hidden shadow-card">
+                        <img src="YOUR_IMAGE_KAKAO_1.png" alt="카톡 메시지 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="aspect-[9/16] bg-gray-100 rounded-xl overflow-hidden shadow-card">
+                        <img src="YOUR_IMAGE_KAKAO_2.png" alt="카톡 메시지 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="aspect-[9/16] bg-gray-100 rounded-xl overflow-hidden shadow-card">
+                        <img src="YOUR_IMAGE_KAKAO_3.png" alt="카톡 메시지 3" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Section 3: Core Insight -->
+    <section class="py-32 bg-royal-black text-white text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-royal-black via-gray-900 to-royal-black"></div>
+        <div class="container mx-auto px-6 relative z-10 scroll-reveal">
+            <h2 class="text-4xl md:text-7xl font-serif font-bold mb-12 leading-tight">
+                몰라서 안 옵니다.<br>
+                기억 안 나서 안 옵니다.
+            </h2>
+            <div class="max-w-3xl mx-auto text-lg md:text-2xl font-light leading-relaxed text-gray-300 space-y-8">
+                <p>
+                    당신 가게가 안 되는 이유는<br>
+                    맛이 없어서가 아닙니다. 서비스가 나빠서가 아닙니다.
+                </p>
+                <p class="text-white font-bold text-3xl">
+                    고객 뇌에 각인되지 않았기 때문입니다.
+                </p>
+                <div class="py-8">
+                    <span class="inline-block p-4 border-2 border-imprint-red text-imprint-red font-black text-4xl md:text-5xl rounded-lg transform -rotate-2">
+                        브랜딩은 '인두질'이다
+                    </span>
+                </div>
+                <p>
+                    지워지지 않게. 잊히지 않게.<br>
+                    무조건 이 집만 떠올리게.<br>
+                    이것이 브랜딩의 본질입니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Solution (Transformation) -->
+    <section class="py-24 bg-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-3xl md:text-5xl font-black mb-4 leading-tight md:leading-tight">
+                    8주 후, 당신은<br>
+                    <span class="text-imprint-red">식당 주인</span>이 아니라 <br>
+                    <span class="text-royal-black">브랜드 오너</span>입니다
+                </h2>
+            </div>
+
+            <!-- Transformation Cards -->
+            <div class="space-y-4">
+                <!-- Change 1 -->
+                <div class="grid md:grid-cols-12 bg-off-white rounded-2xl overflow-hidden shadow-sm scroll-reveal">
+                    <div class="md:col-span-1 bg-gray-200 flex items-center justify-center font-bold text-gray-500 py-4 md:py-0">변화 1</div>
+                    <div class="md:col-span-5 p-8 border-b md:border-b-0 md:border-r border-gray-200">
+                        <span class="text-xs font-bold text-gray-400 mb-2 block">[ BEFORE ]</span>
+                        <h4 class="font-bold text-lg mb-2">비교 대상이 존재함</h4>
+                        <p class="text-gray-600 text-sm">"근처 한식당 5개 중에 어디?" → 비교 → 고민 → 타 매장 선택</p>
+                    </div>
+                    <div class="md:col-span-6 p-8 bg-royal-black text-white relative overflow-hidden">
+                        <div class="absolute right-0 top-0 w-20 h-20 bg-imprint-red blur-2xl opacity-20"></div>
+                        <span class="text-xs font-bold text-imprint-red mb-2 block">[ AFTER ]</span>
+                        <h4 class="font-bold text-lg mb-2 text-white">비교 불가능한 유일무이 포지션</h4>
+                        <p class="text-gray-300 text-sm">"OO 가야지" → 직접 검색 → 바로 방문. 경쟁 자체가 사라집니다.</p>
+                    </div>
+                </div>
+
+                <!-- Change 2 -->
+                <div class="grid md:grid-cols-12 bg-off-white rounded-2xl overflow-hidden shadow-sm scroll-reveal">
+                    <div class="md:col-span-1 bg-gray-200 flex items-center justify-center font-bold text-gray-500 py-4 md:py-0">변화 2</div>
+                    <div class="md:col-span-5 p-8 border-b md:border-b-0 md:border-r border-gray-200">
+                        <span class="text-xs font-bold text-gray-400 mb-2 block">[ BEFORE ]</span>
+                        <p class="text-gray-600 text-sm">"저번에 간 그 집... 이름이 뭐였지?" (기억 안 남)</p>
+                    </div>
+                    <div class="md:col-span-6 p-8 bg-royal-black text-white">
+                        <span class="text-xs font-bold text-imprint-red mb-2 block">[ AFTER ]</span>
+                        <h4 class="font-bold text-lg mb-2 text-white">고객 뇌에 각인 (0.3초)</h4>
+                        <p class="text-gray-300 text-sm">폰트, 컬러, 텍스처 일치. "OO? 아 거기! 알지!"</p>
+                    </div>
+                </div>
+
+                <!-- Change 3 -->
+                <div class="grid md:grid-cols-12 bg-off-white rounded-2xl overflow-hidden shadow-sm scroll-reveal">
+                    <div class="md:col-span-1 bg-gray-200 flex items-center justify-center font-bold text-gray-500 py-4 md:py-0">변화 3</div>
+                    <div class="md:col-span-5 p-8 border-b md:border-b-0 md:border-r border-gray-200">
+                        <span class="text-xs font-bold text-gray-400 mb-2 block">[ BEFORE ]</span>
+                        <p class="text-gray-600 text-sm">애매한 컨셉. 흐릿한 정체성. "뭐 하는 집이지?"</p>
+                    </div>
+                    <div class="md:col-span-6 p-8 bg-royal-black text-white">
+                        <span class="text-xs font-bold text-imprint-red mb-2 block">[ AFTER ]</span>
+                        <h4 class="font-bold text-lg mb-2 text-white">단 한 단어로 정의되는 정체성</h4>
+                        <p class="text-gray-300 text-sm">미장센으로 완성된 공간. "아, 이 집은 이런 곳이구나!"</p>
+                    </div>
+                </div>
+                 <!-- Change 4 -->
+                 <div class="grid md:grid-cols-12 bg-off-white rounded-2xl overflow-hidden shadow-sm scroll-reveal">
+                    <div class="md:col-span-1 bg-gray-200 flex items-center justify-center font-bold text-gray-500 py-4 md:py-0">변화 4</div>
+                    <div class="md:col-span-5 p-8 border-b md:border-b-0 md:border-r border-gray-200">
+                        <span class="text-xs font-bold text-gray-400 mb-2 block">[ BEFORE ]</span>
+                        <p class="text-gray-600 text-sm">주인 = 가게 (주인이 없으면 가게도 없음)</p>
+                    </div>
+                    <div class="md:col-span-6 p-8 bg-royal-black text-white">
+                        <span class="text-xs font-bold text-imprint-red mb-2 block">[ AFTER ]</span>
+                        <h4 class="font-bold text-lg mb-2 text-white">독립 자산화</h4>
+                        <p class="text-gray-300 text-sm">2호점 확장, 대물림, 매각, 프랜차이즈 가능</p>
+                    </div>
+                </div>
+                 <!-- Change 5 -->
+                 <div class="grid md:grid-cols-12 bg-off-white rounded-2xl overflow-hidden shadow-sm scroll-reveal">
+                    <div class="md:col-span-1 bg-gray-200 flex items-center justify-center font-bold text-gray-500 py-4 md:py-0">변화 5</div>
+                    <div class="md:col-span-5 p-8 border-b md:border-b-0 md:border-r border-gray-200">
+                        <span class="text-xs font-bold text-gray-400 mb-2 block">[ BEFORE ]</span>
+                        <p class="text-gray-600 text-sm">"이해했습니다" (머리로만 앎)</p>
+                    </div>
+                    <div class="md:col-span-6 p-8 bg-royal-black text-white">
+                        <span class="text-xs font-bold text-imprint-red mb-2 block">[ AFTER ]</span>
+                        <h4 class="font-bold text-lg mb-2 text-white">머리가 아니라 손이 움직임</h4>
+                        <p class="text-gray-300 text-sm">"내일 로고 바꿉니다", "오늘 메뉴판 재배치합니다"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 5: Curriculum -->
+    <section class="py-24 bg-paper relative">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="mb-16">
+                <div class="grid grid-cols-2 gap-4 md:gap-6 mb-12 max-w-3xl mx-auto scroll-reveal">
+                    <div class="aspect-[4/3] bg-gray-200 rounded-xl overflow-hidden">
+                        <img src="YOUR_CLASS_PHOTO_1.jpg" alt="수업 현장 1" class="w-full h-full object-cover">
+                    </div>
+                    <div class="aspect-[4/3] bg-gray-200 rounded-xl overflow-hidden">
+                        <img src="YOUR_CLASS_PHOTO_2.jpg" alt="수업 현장 2" class="w-full h-full object-cover">
+                    </div>
+                    <div class="aspect-[4/3] bg-gray-200 rounded-xl overflow-hidden">
+                        <img src="YOUR_CLASS_PHOTO_3.jpg" alt="수업 현장 3" class="w-full h-full object-cover">
+                    </div>
+                    <div class="aspect-[4/3] bg-gray-200 rounded-xl overflow-hidden">
+                        <img src="YOUR_CLASS_PHOTO_4.jpg" alt="수업 현장 4" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="text-center scroll-reveal">
+                    <span class="bg-imprint-red text-white px-3 py-1 text-sm font-bold mb-4 inline-block">8 Weeks Process</span>
+                    <h2 class="text-3xl md:text-5xl font-black leading-tight md:leading-tight">
+                        이해 안되는 복잡한 이론 대신<br>
+                        당장 적용 가능한 <br>
+                        <span class="highlight-marker">실전 전략</span>만 배우세요.
+                    </h2>
+                    <p class="mt-6 text-gray-600 font-bold">교재 없음. 매주 업데이트되는 현재형 강의. 브랜딩 전 과정 8주 압축.</p>
+                </div>
+            </div>
+    
+            <div class="relative border-l-2 border-gray-300 ml-4 md:ml-0 md:pl-0 space-y-12">
+                
+                <!-- Week 1 -->
+                <div class="relative md:flex items-start group scroll-reveal">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-royal-black md:relative md:left-auto md:top-auto md:w-24 md:h-auto md:bg-transparent md:text-right md:pr-8 md:font-black md:text-xl md:text-gray-400 group-hover:text-imprint-red transition-colors">
+                        W1
+                    </div>
+                    <div class="ml-8 md:ml-0 flex-1 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-imprint-red/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i class="fas fa-bullseye text-2xl text-imprint-red"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-royal-black mb-1">지금은 브랜딩 시대</h3>
+                                <p class="text-sm text-gray-500 mb-3">브랜딩 재규정 + 감각 강화</p>
+                                <ul class="text-gray-600 text-sm space-y-1 mb-3 check-list">
+                                    <li>브랜딩 재규정 (브랜드 vs 카테고리)</li>
+                                    <li>시청후미촉 감각 강화</li>
+                                    <li>문제 해결형 브랜딩</li>
+                                    <li>시장 세분화 브랜딩</li>
+                                </ul>
+                                <p class="text-imprint-red font-bold text-sm bg-imprint-red/5 p-2 rounded inline-block">→ 브랜딩의 본질 재정립</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Week 2 -->
+                <div class="relative md:flex items-start group scroll-reveal">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-royal-black md:relative md:left-auto md:top-auto md:w-24 md:h-auto md:bg-transparent md:text-right md:pr-8 md:font-black md:text-xl md:text-gray-400 group-hover:text-imprint-red transition-colors">
+                        W2
+                    </div>
+                    <div class="ml-8 md:ml-0 flex-1 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-imprint-red/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i class="fas fa-gem text-2xl text-imprint-red"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-royal-black mb-1">희소화 전략</h3>
+                                <p class="text-sm text-gray-500 mb-3">뉴스메이킹 + 크리에이티브</p>
+                                <ul class="text-gray-600 text-sm space-y-1 mb-3 check-list">
+                                    <li>뉴스메이킹 전략</li>
+                                    <li>희소화 브랜딩</li>
+                                    <li>브랜드 캐슬링</li>
+                                    <li>크리에이티브 사고법</li>
+                                </ul>
+                                <p class="text-imprint-red font-bold text-sm bg-imprint-red/5 p-2 rounded inline-block">→ 희소성으로 가치 창출</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Week 3 -->
+                <div class="relative md:flex items-start group scroll-reveal">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-royal-black md:relative md:left-auto md:top-auto md:w-24 md:h-auto md:bg-transparent md:text-right md:pr-8 md:font-black md:text-xl md:text-gray-400 group-hover:text-imprint-red transition-colors">
+                        W3
+                    </div>
+                    <div class="ml-8 md:ml-0 flex-1 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-imprint-red/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i class="fas fa-lightbulb text-2xl text-imprint-red"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-royal-black mb-1">컨셉이 무기다</h3>
+                                <p class="text-sm text-gray-500 mb-3">컨셉 셋팅 + 콘텐츠 메이킹</p>
+                                <ul class="text-gray-600 text-sm space-y-1 mb-3 check-list">
+                                    <li>미장센(영화적 공간 연출), 몽타주, 오마주 기법</li>
+                                    <li>에센스: 단 한 단어로 브랜드 정의</li>
+                                </ul>
+                                <p class="text-imprint-red font-bold text-sm bg-imprint-red/5 p-2 rounded inline-block">→ "이 집은 이런 곳이다" 즉각 전달되는 정체성</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Week 4 -->
+                <div class="relative md:flex items-start group scroll-reveal">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-royal-black md:relative md:left-auto md:top-auto md:w-24 md:h-auto md:bg-transparent md:text-right md:pr-8 md:font-black md:text-xl md:text-gray-400 group-hover:text-imprint-red transition-colors">
+                        W4
+                    </div>
+                    <div class="ml-8 md:ml-0 flex-1 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-imprint-red/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i class="fas fa-crown text-2xl text-imprint-red"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-royal-black mb-1">독보적인 브랜드 만들기</h3>
+                                <p class="text-sm text-gray-500 mb-3">유일무이 포지션 구축</p>
+                                <ul class="text-gray-600 text-sm space-y-1 mb-3 check-list">
+                                    <li>돈두두돈, 미유현불, 정반대 전략 (역발상)</li>
+                                    <li>"다 죽어도 나만 살아야 한다"는 절박함</li>
+                                </ul>
+                                <p class="text-imprint-red font-bold text-sm bg-imprint-red/5 p-2 rounded inline-block">→ Best 5 경쟁 탈피, Only One 포지션 선점</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Week 5 -->
+                <div class="relative md:flex items-start group scroll-reveal">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-royal-black md:relative md:left-auto md:top-auto md:w-24 md:h-auto md:bg-transparent md:text-right md:pr-8 md:font-black md:text-xl md:text-gray-400 group-hover:text-imprint-red transition-colors">
+                        W5
+                    </div>
+                    <div class="ml-8 md:ml-0 flex-1 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-imprint-red/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i class="fas fa-heart text-2xl text-imprint-red"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-royal-black mb-1">브랜드는 섹이다</h3>
+                                <p class="text-sm text-gray-500 mb-3">브랜드 전쟁 + 퍼스널리티 셋팅</p>
+                                <ul class="text-gray-600 text-sm space-y-1 mb-3 check-list">
+                                    <li>브랜드 액기스 추출, 만트라와 슬로건</li>
+                                    <li>브랜드 인격화</li>
+                                </ul>
+                                <p class="text-imprint-red font-bold text-sm bg-imprint-red/5 p-2 rounded inline-block">→ 한 문장으로 브랜드 완전 정의</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Week 6 -->
+                <div class="relative md:flex items-start group scroll-reveal">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-royal-black md:relative md:left-auto md:top-auto md:w-24 md:h-auto md:bg-transparent md:text-right md:pr-8 md:font-black md:text-xl md:text-gray-400 group-hover:text-imprint-red transition-colors">
+                        W6
+                    </div>
+                    <div class="ml-8 md:ml-0 flex-1 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-imprint-red/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i class="fas fa-chess text-2xl text-imprint-red"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-royal-black mb-1">포지셔닝은 밀어내기</h3>
+                                <p class="text-sm text-gray-500 mb-3">경쟁자 제거 전략</p>
+                                <ul class="text-gray-600 text-sm space-y-1 mb-3 check-list">
+                                    <li>포지셔닝 전략 + 프레이밍 전술</li>
+                                    <li>네이밍 공식, 브랜드 기호학 (로고·폰트·징글·캐릭터)</li>
+                                    <li>바리케이드 전략 (파사드 필터링)</li>
+                                </ul>
+                                <p class="text-imprint-red font-bold text-sm bg-imprint-red/5 p-2 rounded inline-block">→ 경쟁자를 '밀어내는' 독점 포지션</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Week 7 -->
+                <div class="relative md:flex items-start group scroll-reveal">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-royal-black md:relative md:left-auto md:top-auto md:w-24 md:h-auto md:bg-transparent md:text-right md:pr-8 md:font-black md:text-xl md:text-gray-400 group-hover:text-imprint-red transition-colors">
+                        W7
+                    </div>
+                    <div class="ml-8 md:ml-0 flex-1 bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-imprint-red/10 rounded-xl flex items-center justify-center shrink-0">
+                                <i class="fas fa-rocket text-2xl text-imprint-red"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-royal-black mb-1">브랜드 영토 확장</h3>
+                                <p class="text-sm text-gray-500 mb-3">확장 전략 + 티칭·코칭</p>
+                                <ul class="text-gray-600 text-sm space-y-1 mb-3 check-list">
+                                    <li>브랜드 공성 전략, 브랜드 가치 공식</li>
+                                    <li>2호점 시나리오 설계</li>
+                                </ul>
+                                <p class="text-imprint-red font-bold text-sm bg-imprint-red/5 p-2 rounded inline-block">→ 1호점을 넘어 브랜드 제국 구축</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Week 8 -->
+                <div class="relative md:flex items-start group scroll-reveal">
+                    <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-royal-black md:relative md:left-auto md:top-auto md:w-24 md:h-auto md:bg-transparent md:text-right md:pr-8 md:font-black md:text-xl md:text-imprint-red group-hover:text-imprint-red transition-colors">
+                        W8
+                    </div>
+                    <div class="ml-8 md:ml-0 flex-1 border-2 border-royal-black p-6 rounded-2xl bg-white">
+                        <div class="flex items-start gap-4">
+                            <div class="w-14 h-14 bg-royal-black rounded-xl flex items-center justify-center shrink-0">
+                                <i class="fas fa-trophy text-2xl text-white"></i>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold text-royal-black mb-1">브랜딩 프리젠테이션</h3>
+                                <p class="text-sm text-gray-500 mb-3">최종 완성 + 실전 적용</p>
+                                <ul class="text-gray-600 text-sm space-y-1 mb-3 check-list">
+                                    <li>전체 브랜드 재정립 실습 (특성, 퍼스널리티, 액기스 등)</li>
+                                    <li>Best 5 분석 → 나만의 포지션 확정</li>
+                                </ul>
+                                <p class="text-imprint-red font-black text-base">→ 8주 완성본으로 즉시 시장 진입</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 6: Differentiation -->
+    <section class="py-24 bg-royal-black text-white">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="text-center mb-16 scroll-reveal">
+                <h2 class="text-3xl md:text-5xl font-black mb-6 leading-tight md:leading-tight">
+                    복잡한 이론을 버리는 게 아닙니다.<br>
+                    <span class="text-imprint-red">실전 전략으로 바꿉니다.</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Point 1 -->
+                <div class="bg-charcoal p-8 rounded-2xl border border-white/10 scroll-reveal">
+                    <h3 class="text-2xl font-bold mb-4 text-imprint-red">01. 자영업자 생존 브랜딩</h3>
+                    <div class="mb-4 text-gray-400 text-sm">
+                        <p class="line-through decoration-red-500">❌ 샤넬, 구찌 케이스 스터디</p>
+                        <p class="line-through decoration-red-500">❌ 수억 원 예산 필요한 대기업 전략</p>
+                    </div>
+                    <div class="mb-6 font-bold text-white text-lg">
+                        <p>✅ 자본금 3,000만 원 카페</p>
+                        <p>✅ 직원 2명 네일샵</p>
+                        <p>✅ 골목상권 치킨집</p>
+                    </div>
+                    <p class="text-gray-300 italic">"우리는 샤넬이 아닙니다. 전통도, 자본도 없습니다. 그래도 살아야 합니다."</p>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="bg-charcoal p-8 rounded-2xl border border-white/10 scroll-reveal" style="transition-delay: 0.1s;">
+                    <h3 class="text-2xl font-bold mb-4 text-imprint-red">02. 고객이 찾는 브랜드</h3>
+                    <ul class="space-y-2 text-white font-medium mb-6 check-list">
+                        <li>고객 뇌에 각인되는 시그니처</li>
+                        <li>0.3초 만에 인지되는 시각 시스템</li>
+                        <li>유일무이 포지셔닝</li>
+                        <li>미장센 완성</li>
+                    </ul>
+                    <p class="text-gray-300">고객이 먼저 찾아옵니다. 그게 브랜딩입니다.</p>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="bg-charcoal p-8 rounded-2xl border border-white/10 scroll-reveal" style="transition-delay: 0.2s;">
+                    <h3 class="text-2xl font-bold mb-4 text-imprint-red">03. 이론을 실전으로 변환</h3>
+                    <div class="space-y-4">
+                        <div class="bg-black/30 p-3 rounded">
+                            <span class="text-xs text-gray-400 block">거울 뉴런 (뇌과학)</span>
+                            <span class="text-sm font-bold">→ 고객이 자신을 투영하는 카피 작성법</span>
+                        </div>
+                        <div class="bg-black/30 p-3 rounded">
+                            <span class="text-xs text-gray-400 block">프레이밍 (심리학)</span>
+                            <span class="text-sm font-bold">→ 고객 뇌에 먼저 자리 잡는 포지셔닝</span>
+                        </div>
+                        <div class="bg-black/30 p-3 rounded">
+                            <span class="text-xs text-gray-400 block">시각 3요소 매칭 (인지과학)</span>
+                            <span class="text-sm font-bold">→ 0.3초 만에 인지되는 조합법</span>
+                        </div>
+                    </div>
+                    <p class="mt-4 text-gray-300 text-sm">"거울 뉴런이 뭔지는 몰라도, 고객이 내 브랜드에 자신을 투영하게 만드는 법은 안다."</p>
+                </div>
+
+                <!-- Point 4 -->
+                <div class="bg-charcoal p-8 rounded-2xl border border-white/10 scroll-reveal" style="transition-delay: 0.3s;">
+                    <h3 class="text-2xl font-bold mb-4 text-imprint-red">04. 살아있는 강의</h3>
+                    <p class="text-xl font-bold mb-4">"교재가 없습니다. 시장은 매일 바뀌니까요."</p>
+                    <p class="text-gray-400 text-sm mb-4">
+                        작년에 먹혔던 전략? 올해는 안 먹힙니다.<br>
+                        2개월 전 유행하던 컨셉? 지금은 진부합니다.
+                    </p>
+                    <div class="bg-imprint-red/20 border border-imprint-red p-4 rounded text-center">
+                        <p class="text-white font-bold">매주 업데이트되는 사례. 8주 내내 현재형 강의.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 7: Instructor -->
+    <section class="py-24 bg-white text-royal-black">
+        <div class="container mx-auto px-6 max-w-6xl">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/3 text-center lg:text-left scroll-reveal">
+                    <div class="mb-8">
+                        <div class="w-48 h-48 md:w-56 md:h-56 mx-auto lg:mx-0 rounded-full overflow-hidden border-4 border-royal-black shadow-xl">
+                            <img src="YOUR_INSTRUCTOR_PROFILE_IMAGE.jpg" alt="김유진 강사" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                    <div class="inline-block border-2 border-royal-black p-2 mb-6">
+                        <span class="block bg-royal-black text-white px-4 py-1 font-bold text-sm uppercase">The Instructor</span>
+                    </div>
+                    <h2 class="text-5xl font-black mb-2">김유진</h2>
+                    <p class="text-xl font-bold text-gray-600 mb-6">자영업 1타 강사 / 김유진 아카데미 대표</p>
+                    
+                    <div class="space-y-4 font-medium border-t border-gray-200 pt-6">
+                        <p>MBC PD 출신 (성균관대 신문방송학과)</p>
+                        <p class="text-imprint-red font-bold text-lg">3,000개 브랜드 매니지먼트</p>
+                        <p class="text-imprint-red font-bold text-lg">연간 총매출 1조 8천억 원 창출</p>
+                        <p>現 신한 SOHO 교육 자문</p>
+                        <p>現 LG 유플러스 DX 솔루션 아카데미 고문</p>
+                        <p>現 국방부 국민소통위원회 전문위원</p>
+                        <p class="font-bold">대한민국 최대 자영업사관학교 대표강사</p>
+                    </div>
+                </div>
+
+                <div class="lg:w-2/3 scroll-reveal" style="transition-delay: 0.2s;">
+                    <div class="bg-off-white p-10 rounded-3xl shadow-lg relative">
+                        <i class="fas fa-quote-left text-4xl text-gray-300 absolute top-8 left-8"></i>
+                        <blockquote class="text-xl md:text-2xl font-serif font-medium leading-relaxed text-gray-800 text-center py-6">
+                            "우리는 샤넬이 아닙니다. 구찌도 아닙니다.<br>
+                            수백 년의 역사와 전통도 없습니다.<br>
+                            그래도 살아야 합니다.<br>
+                            우리는 브랜드를 소유한 오너니까요."
+                        </blockquote>
+                        <div class="text-center mt-6 space-y-4 text-gray-600">
+                            <p>800만 자영업자 99%는 카테고리로 불립니다. 
+                            <br>1%만이 브랜드로 불립니다.</p>
+                            <p class="font-bold text-royal-black">"다 죽어도 나만 살아야 한다"</p>
+                            <p class="mt-4 font-bold">1년 365일, 당신의 브랜드가 유명해지기를 기원합니다.</p>
+                        </div>
+                    </div>
+
+                <!-- Books (이미지형) -->
+                <div class="mt-16 md:pl-10">
+                    <p class="text-sm font-bold text-gray-500 mb-6 uppercase tracking-widest text-center lg:text-left border-b pb-2 inline-block">Best Seller Books (7권 연속 1위)</p>
+                    <div class="flex flex-wrap gap-4 justify-center lg:justify-start items-end">
+                        <!-- 책 표지 1 -->
+                        <div class="w-24 h-36 bg-gray-200 shadow-md rounded-sm overflow-hidden hover:-translate-y-2 transition-transform">
+                            <img src="https://via.placeholder.com/100x150/ddd/333?text=Book+1" alt="한국형 장사의 신" class="w-full h-full object-cover">
+                        </div>
+                        <!-- 책 표지 2 -->
+                        <div class="w-24 h-36 bg-gray-200 shadow-md rounded-sm overflow-hidden hover:-translate-y-2 transition-transform" style="transition-delay: 0.1s">
+                            <img src="https://via.placeholder.com/100x150/ccc/333?text=Book+2" alt="장사는 전략이다" class="w-full h-full object-cover">
+                        </div>
+                        <!-- 책 표지 3 -->
+                        <div class="w-24 h-36 bg-gray-200 shadow-md rounded-sm overflow-hidden hover:-translate-y-2 transition-transform" style="transition-delay: 0.2s">
+                            <img src="https://via.placeholder.com/100x150/bbb/333?text=Book+3" alt="장사 이제는 콘텐츠다" class="w-full h-full object-cover">
+                        </div>
+                        <!-- 신간 강조 -->
+                        <div class="w-28 h-40 bg-royal-black shadow-xl rounded-sm overflow-hidden hover:-translate-y-4 transition-transform border-2 border-imprint-red relative z-10" style="transition-delay: 0.3s">
+                            <div class="absolute top-0 right-0 bg-imprint-red text-white text-[10px] px-2 py-0.5 font-bold">NEW</div>
+                            <img src="https://via.placeholder.com/120x180/000/fff?text=FAMOUS" alt="페이머스" class="w-full h-full object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 8: FAQ -->
+    <section class="py-24 bg-off-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl font-black text-center mb-12">자주 묻는 질문 (FAQ)</h2>
+            <div class="space-y-4">
+                <details class="group bg-white rounded-lg shadow-sm border border-gray-100 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold p-6 list-none group-open:text-imprint-red transition-colors">
+                        <span>Q1. 8주 후 어떤 변화가 생기나요?</span>
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 animate-fade-in-up">
+                        <p class="font-bold mb-2 text-black">베스트셀러 '페이머스'의 완성형 과정입니다.</p>
+                        <ul class="list-disc pl-5 space-y-1 text-sm">
+                            <li>단 한 단어로 정의되는 브랜드 에센스</li>
+                            <li>0.3초 만에 인지되는 시그니처 시스템</li>
+                            <li>경쟁자를 밀어내는 포지셔닝</li>
+                            <li>영화 세트장 같은 미장센 설계도</li>
+                        </ul>
+                        <p class="mt-2 font-bold">다음 날부터 바로 실행 가능합니다.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-lg shadow-sm border border-gray-100 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold p-6 list-none group-open:text-imprint-red transition-colors">
+                        <span>Q2. 페이머스만의 특별한 점은?</span>
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 animate-fade-in-up">
+                        <p class="mb-2">복잡한 이론을 즉시 쓸 실전으로 변환합니다.</p>
+                        <div class="bg-gray-50 p-3 rounded text-sm mb-2">
+                            <span class="block font-bold">일반 강의</span> 개념 이해 → 적용은 스스로 고민<br>
+                            <span class="block font-bold text-imprint-red">페이머스</span> 실전 전략 → 즉시 실행
+                        </div>
+                        <p class="text-sm">매주 새로운 성공 사례로 강의가 업데이트되는 '현재형 강의'입니다.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-lg shadow-sm border border-gray-100 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold p-6 list-none group-open:text-imprint-red transition-colors">
+                        <span>Q3. 어떤 업종에 적용되나요?</span>
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 animate-fade-in-up">
+                        <p class="font-bold">전 업종 적용 가능합니다. 핵심은 업종이 아닙니다.</p>
+                        <p class="text-sm mt-2">"OO식당", "OO학원", "OO카페"라는 카테고리에서 벗어나 브랜드 그 자체가 되는 원리는 모든 비즈니스에 동일하게 적용됩니다.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-lg shadow-sm border border-gray-100 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold p-6 list-none group-open:text-imprint-red transition-colors">
+                        <span>Q4. 브랜드 자산이란?</span>
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 animate-fade-in-up">
+                        <p class="mb-2">시스템으로 작동하는 브랜드입니다.</p>
+                        <p class="text-sm">주인이 없어도 돌아가는 체계, 2호점/3호점 확장 가능성, 프랜차이즈 전환, 세대 간 승계가 가능한 상태. 가게가 아니라 '자산'이 되는 것입니다.</p>
+                    </div>
+                </details>
+
+                <details class="group bg-white rounded-lg shadow-sm border border-gray-100 cursor-pointer">
+                    <summary class="flex justify-between items-center font-bold p-6 list-none group-open:text-imprint-red transition-colors">
+                        <span>Q5. 수강 후 얻게 되는 것은?</span>
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-gray-600 px-6 pb-6 animate-fade-in-up">
+                        <p class="font-bold mb-2">평생 활용 가능한 브랜딩 시스템입니다.</p>
+                        <p class="text-sm">브랜드 에센스 추출, 시각 매칭, 포지셔닝 설계 등 1호점에서 배워서 10호점까지 적용할 수 있는 평생의 무기를 얻게 됩니다.</p>
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: Final CTA -->
+    <section id="final-cta" class="py-24 bg-royal-black text-center relative overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
+        <div class="container mx-auto px-6 relative z-10 max-w-5xl">
+            <h2 class="text-4xl md:text-6xl font-black text-white mb-8 leading-tight md:leading-tight">
+                지금 이 순간<br>
+                당신은 <span class="text-gray-500">브랜드</span>가 아닌<br>
+                <span class="text-imprint-red">카테고리</span>로 불리고 있습니다
+            </h2>
+            <p class="text-xl text-gray-400 mb-12">
+                "근처 괜찮은 식당 어디?"<br>
+                비교당하고, 묻히고, 각인되지 않습니다.<br>
+                <strong class="text-white mt-4 block text-2xl">8주의 차이가 평생을 바꿉니다.</strong>
+            </p>
+
+            <!-- Scenario Split -->
+            <div class="grid md:grid-cols-2 gap-6 mb-16 text-left">
+                <!-- Scenario A -->
+                <div class="bg-gray-900/50 p-8 rounded-2xl border border-gray-800 opacity-70 hover:opacity-100 transition-opacity">
+                    <h4 class="text-xl font-bold text-gray-400 mb-4">[시나리오 A] 지금 안 했을 때</h4>
+                    <p class="text-sm text-gray-500 mb-2">2026년 12월</p>
+                    <p class="text-gray-300 font-medium mb-4">여전히 카테고리입니다.</p>
+                    <ul class="text-sm text-gray-500 space-y-2 list-disc pl-4">
+                        <li>"그냥 괜찮은 카페 중 하나"</li>
+                        <li>비교당하고 묻힘</li>
+                        <li>자산화 실패</li>
+                    </ul>
+                </div>
+
+                <!-- Scenario B -->
+                <div class="bg-white p-8 rounded-2xl border border-white transform md:-translate-y-4 shadow-glow">
+                    <h4 class="text-xl font-bold text-imprint-red mb-4">[시나리오 B] 지금 시작했을 때</h4>
+                    <p class="text-sm text-gray-400 mb-2">2026년 12월</p>
+                    <p class="text-royal-black font-bold text-lg mb-4">브랜드가 됐습니다.</p>
+                    <ul class="text-sm text-gray-600 space-y-2 check-list font-medium">
+                        <li>"OO 가자", "OO 아니면 안 돼"</li>
+                        <li>비교 대상 사라짐, 각인 완료</li>
+                        <li>2호점 오픈, 브랜드 자산 획득</li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="text-2xl text-white font-bold mb-12">
+                문제는 시기입니다. 3,671명은 이미 카테고리를 벗어났습니다.<br>
+                <span class="text-imprint-red">다음은 당신 차례입니다.</span>
+            </p>
+
+            <!-- [추가됨] 상세 모집 요강 그리드 -->
+            <div class="bg-gray-900 rounded-3xl p-8 md:p-12 mb-16 border border-gray-800 text-left">
+                <h3 class="text-2xl font-bold text-white mb-8 border-b border-gray-700 pb-4">📌 10기 모집 요강</h3>
+                
+                <div class="grid md:grid-cols-2 gap-10">
+                    <!-- 1. 일정 -->
+                    <div class="space-y-2">
+                        <div class="flex items-center text-imprint-red font-bold mb-2">
+                            <i class="far fa-calendar-alt mr-2"></i> 교육 일정
+                        </div>
+                        <p class="text-white text-lg font-bold">1월 19일 (월) ~ 3월 9일 (월)</p>
+                        <p class="text-gray-400">총 8주 / 매주 월요일 15:00 ~ 17:30</p>
+                    </div>
+
+                    <!-- 2. 비용 -->
+                    <div class="space-y-2">
+                        <div class="flex items-center text-imprint-red font-bold mb-2">
+                            <i class="fas fa-won-sign mr-2"></i> 교육비 및 혜택
+                        </div>
+                        <p class="text-white text-lg font-bold">2,240,000원</p>
+                        <ul class="text-sm text-gray-400 list-disc list-inside space-y-1">
+                            <li><span class="text-red-400 font-bold">등록마감 : 1월 16일(금)</span></li>
+                            <li>재수강 50%, 3수강 이후 70% 할인</li>
+                            <li>계좌이체시 계산서 발급, 카드 할부 가능</li>
+                        </ul>
+                    </div>
+
+                    <!-- 3. 장소 (이미지 포함) -->
+                    <div class="space-y-2 md:col-span-2">
+                        <div class="flex items-center text-imprint-red font-bold mb-2">
+                            <i class="fas fa-map-marker-alt mr-2"></i> 교육 장소
+                        </div>
+                        <div class="flex flex-col md:flex-row gap-6">
+                            <div class="flex-1">
+                                <p class="text-white font-bold mb-1">김유진 아카데미 (대모빌딩 4층)</p>
+                                <p class="text-gray-400 text-sm mb-3">서울 강남구 삼성로 104길 17</p>
+                                <div class="space-y-1 text-sm text-gray-500">
+                                    <p><span class="bg-green-800 text-white text-xs px-1 rounded mr-1">2호선</span> 삼성역 5번 출구 도보 13분</p>
+                                    <p><span class="bg-yellow-700 text-white text-xs px-1 rounded mr-1">9호선</span> 삼성중앙역 5번 출구 도보 5분</p>
+                                </div>
+                            </div>
+                            <!-- 지도/약도 이미지 영역 -->
+                            <div class="w-full md:w-80 h-60 md:h-48 rounded-lg overflow-hidden">
+                                <iframe 
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3164.8!2d127.05!3d37.51!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z7ISc7Jq47Yq567OE7IucIOqwleuCqOq1rCDsgrzshLHroZwgMTA06ri4IDE3!5e0!3m2!1sko!2skr!4v1234567890"
+                                    width="100%" 
+                                    height="100%" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy"
+                                    class="grayscale hover:grayscale-0 transition-all duration-400">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. 기타 혜택 -->
+                    <div class="md:col-span-2 bg-royal-black p-6 rounded-xl border border-gray-700 flex flex-col md:flex-row items-start md:items-center gap-4">
+                        <div class="bg-imprint-red text-white p-3 rounded-full shrink-0">
+                            <i class="fas fa-gift text-xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-white font-bold mb-1">추천인 & 등록인 모두 5% 적립!</p>
+                            <p class="text-sm text-gray-400">김유진 아카데미의 모든 수업에서 사용 가능합니다.<br>(추천인은 등록자 기재인 한정, 타 혜택 중복 불가)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="YOUR_REGISTRATION_URL" target="_blank" class="inline-block bg-imprint-red hover:bg-red-700 text-white font-black py-6 px-12 md:px-20 rounded-full text-2xl shadow-[0_0_40px_rgba(211,47,47,0.6)] transition-all transform hover:scale-105 animate-pulse-slow mb-8">
+                페이머스 10기 신청하기
+            </a>
+            
+            <div class="text-gray-400 text-sm mb-12">
+                <p>베스트셀러 <페이머스>의 오프라인 심화과정 | YES24 창업·장사 1위</p>
+            </div>
+
+            <!-- [추가됨] 세션 추가 버튼 -->
+            <div class="flex flex-col items-center gap-6 max-w-md mx-auto border-t border-white/10 pt-12">
+                <!-- 다른 강의 -->
+                <a href="YOUR_OTHER_COURSES_URL" target="_blank" class="w-full px-8 py-4 rounded-xl border border-gray-600 text-gray-300 hover:text-white hover:border-white hover:bg-white/5 transition-all font-bold flex items-center justify-center gap-3 group">
+                    <i class="fas fa-book-open text-gray-500 group-hover:text-white transition-colors"></i>
+                    다른 강의 둘러보기
+                </a>
+            
+                <!-- 올인원 패키지 -->
+                <a href="YOUR_ALLINONE_PACKAGE_URL" target="_blank" class="w-full rounded-xl border border-gray-600 hover:border-imprint-red transition-all overflow-hidden group">
+                    <div class="flex items-center gap-4 p-4">
+                        <div class="w-20 h-20 md:w-24 md:h-24 shrink-0 bg-gray-800 rounded-lg overflow-hidden">
+                            <img src="YOUR_ALLINONE_PACKAGE_IMAGE.jpg" alt="올인원 패키지" class="w-full h-full object-cover">
+                        </div>
+                        <div class="flex-1 text-left">
+                            <p class="text-white font-bold group-hover:text-imprint-red transition-colors">올인원 패키지</p>
+                            <p class="text-sm text-gray-500">모든 강의를 한 번에</p>
+                        </div>
+                        <i class="fas fa-chevron-right text-gray-600 group-hover:text-imprint-red transition-colors"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-gray-600 py-12 text-center text-sm border-t border-gray-900">
+        <div class="container mx-auto px-6">
+            <p class="font-bold text-gray-500 mb-4">김유진 아카데미</p>
+            <p class="leading-loose">
+                카테고리에서 브랜드로. 고객 뇌에 인두질하는 8주.<br>
+                1년 365일, 당신의 브랜드가 유명해지기를 기원합니다.<br>
+                - 김유진
+            </p>
+            <p class="mt-8 text-xs text-gray-700">&copy; 2024 Kim Yujin Academy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Scroll Reveal Animation
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            const elements = document.querySelectorAll('.scroll-reveal');
+            elements.forEach(el => observer.observe(el));
+        });
+    </script>
+</body>
+</html>
